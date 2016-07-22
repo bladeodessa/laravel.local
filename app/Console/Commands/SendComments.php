@@ -14,8 +14,8 @@ class SendComments extends Command
      * @var string
      */
     protected $signature = 'news-comment:create
-                            {newsID : ID commenta}
-                            {--comment= : Telo commenta}';
+                            {newsID : Comment ID}
+                            {--comment= : Comment body}';
 
     /**
      * The console command description.

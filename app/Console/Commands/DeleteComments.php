@@ -13,7 +13,7 @@ class DeleteComments extends Command
      * @var string
      */
     protected $signature = 'news-comment:delete
-                            {commentID : ID комментария}';
+                            {commentID : Comment ID}';
 
     /**
      * The console command description.
