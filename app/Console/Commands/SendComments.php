@@ -14,8 +14,8 @@ class SendComments extends Command
      * @var string
      */
     protected $signature = 'news-comment:create
-                            {newsID : ID íîâîñòè}
-                            {--comment= : Òåêñò íîâîñòè}';
+                            {newsID : ID ĞºĞ¾Ğ¼Ğ¼ĞµĞ½Ñ‚Ğ°Ñ€Ğ¸Ñ}
+                            {--comment= : Ğ¢ĞµĞ»Ğ¾ ĞºĞ¾Ğ¼Ğ¼ĞµĞ½Ñ‚Ğ°Ñ€Ğ¸Ñ}';
 
     /**
      * The console command description.
@@ -44,7 +44,7 @@ class SendComments extends Command
         $newsID = $this->argument('newsID');
         if (News::find($newsID)) {
             $commentOption = $this->option('comment');
-            $userID = 1;   // èäåì ïî çàäàíèş, íå óñëîæíÿş
+            $userID = 1;   // Ğ£Ğ¿Ñ€Ğ¾ÑÑ‚Ğ¸Ğ» Ğ·Ğ°Ğ´Ğ°Ñ‡Ñƒ, Ğ¿Ñ€Ğ¸Ğ´ĞµÑ€Ğ¶Ğ¸Ğ²Ğ°ÑÑÑŒ Ğ¢Ğ—
             $comment = new Comment;
             $comment->news_id = $newsID;
             $comment->user_id = $userID;
